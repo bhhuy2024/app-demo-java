@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:keepScreenOn="true"
+    tools:context=".PopupCupActivity">
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="1300dp"
+        android:layout_height="550dp"
+        android:gravity="center">
+        <TextView
+            android:textSize="80sp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:text="세정컵이 없습니다\n"/>
+        <TextView
+            android:textSize="80sp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:text="세정컵을 하나이상 넣고\n"/>
+        <TextView
+            android:textSize="80sp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:text="다시한번 시작버튼을 눌러 주세요"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:background="#66bdbdbd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/close6_button"
+            android:text="확인"
+            android:textSize="90sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="@drawable/navy_button"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="200dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
+

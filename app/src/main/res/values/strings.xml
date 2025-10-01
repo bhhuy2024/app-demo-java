@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DentyLoad4H</string>
+    <string name="START">S T A R T</string>
+    <string name="Confirm">확 인</string>
+    <string name="A_in_Case_Msg">세정컵을 정위치에 놓고\n 시작을 눌러 주세요</string>
+    <string name="sjs_string">안녕하십니까?</string>
+    <string name="sjs2_string">로그인하면텍스트변경됩니다</string>
+    <string name="sjs3_string">아이디입력하세요</string>
+    <string name="sjs4_string">들어와</string>
+    <string name="ssjs1_string">화면 이동</string>
+    <string name="ssjs2_string">세척이 진행중 입니다.</string>
+    <string name="ssjs3_string">홈-BACK</string>
+    <string name="power_string">전원이 연결 되었습니다</string>
+    <string name="go_string">환영합니다. 치아 세척을 진행 하시겠습니까?</string>
+</resources>

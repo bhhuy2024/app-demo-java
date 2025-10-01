@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/color_background"
+    android:gravity="center"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    tools:context=".CupremActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:text="세척이 완료 되었습니다"
+            android:textColor="@color/colorBlackText"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:text="컵을 제거하여 세척수를 버려 주세요"
+            android:textColor="#2196F3"
+            android:textSize="70sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cuprem"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="right"
+            android:text="완 료"
+            android:textSize="30sp"
+            android:enabled="false"
+            android:visibility="visible" >
+        </Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="600dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:src="@drawable/new_gif_door_1">
+        </ImageView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

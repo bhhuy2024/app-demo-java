@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application이 원하는 장치에 대해서만 통보를 받을 수 있다. -->
+    <!-- 0x0403 FTDI -->
+    <usb-device vendor-id="072F" product-id="223F" /> <!-- 0x6001: FT232R -->
+    <usb-device vendor-id="072F" product-id="5286" />
+    <usb-device vendor-id="1027" product-id="24577" /> <!-- 0x6001: FT232R -->
+</resources>
+
+
+

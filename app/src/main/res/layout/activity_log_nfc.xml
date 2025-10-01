@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="1900dp"
+    android:layout_height="1200dp"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/main_text_view_response"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text="TextView"
+            android:visibility="gone"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:id="@+id/backbutton"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/leftarrow">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="이전"
+                    android:textColor="#000000"
+                    android:textSize="70dp"></TextView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:gravity="left"
+                    android:text="          틀니 케이스를 리더기에 가까이 대주세요"
+                    android:textColor="#000000"
+                    android:textSize="74dp"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/main_edit_text_command"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:inputType="textMultiLine"
+            android:visibility="gone">
+
+            <requestFocus></requestFocus>
+
+        </EditText>
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center|top">
+
+
+            <LinearLayout
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:keepScreenOn="true"
+                android:orientation="vertical"
+                android:visibility="visible"
+
+                >
+
+                <!--                <ImageView-->
+
+                <!--                    android:layout_width="800dp"-->
+                <!--                    android:layout_height="500dp"-->
+                <!--                    android:src="@drawable/nfcandcase2"-->
+
+                <!--                    >-->
+
+                <!--                </ImageView>-->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_width="1400dp"
+                    android:layout_height="700dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/nfc_gif"
+                        android:layout_width="1400dp"
+                        android:layout_height="700dp"
+                        android:scaleType="centerCrop" />
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reader:"
+                        android:textSize="20dp"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/main_spinner_reader"
+                            android:layout_width="83dp"
+                            android:layout_height="wrap_content"></Spinner>
+
+                        <Button
+                            android:id="@+id/main_button_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="List"></Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/main_button_open2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Open"></Button>
+
+                        <Button
+                            android:id="@+id/main_button_close"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Close"></Button>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Slot:"
+                        android:textSize="20dp"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:id="@+id/main_spinner_slot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"></Spinner>
+
+                        <Button
+                            android:id="@+id/main_button_get_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get State"></Button>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Power Action:"
+                        android:textSize="20dp"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:id="@+id/main_spinner_power"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"></Spinner>
+
+                        <Button
+                            android:id="@+id/main_button_power"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Power"></Button>
+
+                        <Button
+                            android:id="@+id/main_button_get_atr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get ATR"></Button>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Protocol:"
+                        android:textSize="20dp"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/main_check_box_t0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="T=0"></CheckBox>
+
+                        <CheckBox
+                            android:id="@+id/main_check_box_t1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="T=1"></CheckBox>
+                    </LinearLayout>
+                    \
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/main_button_set_protocol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Set Protocol"
+                            android:textSize="10dp"></Button>
+
+                        <Button
+                            android:id="@+id/main_button_get_protocol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Get Protocol"
+                            android:textSize="10dp"></Button>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transmit / Control:"
+                        android:textSize="10dp"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/main_button_transmit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Transmit"></Button>
+
+                        <Button
+                            android:id="@+id/main_button_control2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Control"></Button>
+
+                        <EditText
+                            android:id="@+id/main_edit_text_control"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"></EditText>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Secure PIN Entry:"
+                        android:textSize="20dp"></TextView>
+
+                    <Button
+                        android:id="@+id/main_button_get_features"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Get Features"></Button>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/main_button_verify_pin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Verify PIN"></Button>
+
+                        <Button
+                            android:id="@+id/main_button_modify_pin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Modify PIN"></Button>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ACR83 / APG8201:"
+                        android:textSize="10dp"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/main_button_read_key"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Read Key"
+                            android:textSize="5dp"></Button>
+
+                        <Button
+                            android:id="@+id/main_button_display_lcd_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Display LCD Message"
+                            android:textSize="5dp"></Button>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_teeth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/button_add"
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_marginLeft="100dp"
+                >
+
+                <TextView
+                    android:id="@+id/user_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:gravity="center"
+                    android:text="테스트 테스트"
+                    android:textSize="30dp"></TextView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    >
+
+
+                    <Button
+                        android:id="@+id/main_button_control"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:backgroundTint="#EAEAEA"
+                        android:textSize="0dp"></Button>
+                    <Button
+                        android:id="@+id/enroll"
+                        android:layout_width="500dp"
+                        android:layout_height="50dp"
+                        android:background="#0692d3"
+                        android:textSize="30dp"
+                        android:text="확인"
+                        android:textColor="#FFFFFF"
+                        android:layout_margin="40dp"
+                        ></Button>
+
+                </LinearLayout>
+
+
+                <!--Button
+                    android:id="@+id/test"
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:visibility="invisible"
+                    android:textSize="30dp"
+
+                    ></Button-->
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Reader:"-->
+            <!--                android:textSize="20dp"></TextView>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <Spinner-->
+            <!--                    android:id="@+id/main_spinner_reader"-->
+            <!--                    android:layout_width="83dp"-->
+            <!--                    android:layout_height="wrap_content"></Spinner>-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/main_button_list"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="List"></Button>-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/main_button_open2"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Open"></Button>-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/main_button_close"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Close"></Button>-->
+            <!--            </LinearLayout>-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Slot:"-->
+            <!--                android:textSize="20dp"></TextView>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <Spinner-->
+            <!--                    android:id="@+id/main_spinner_slot"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"></Spinner>-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/main_button_get_state"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Get State"></Button>-->
+            <!--            </LinearLayout>-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Power Action:"-->
+            <!--                android:textSize="20dp"></TextView>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <Spinner-->
+            <!--                    android:id="@+id/main_spinner_power"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"></Spinner>-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/main_button_power"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Power"-->
+            <!--                    ></Button>-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/main_button_get_atr"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Get ATR"-->
+            <!--                    ></Button>-->
+            <!--            </LinearLayout>-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Protocol:"-->
+            <!--                android:textSize="20dp"></TextView>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <CheckBox-->
+            <!--                    android:id="@+id/main_check_box_t0"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="T=0"></CheckBox>-->
+
+            <!--                <CheckBox-->
+            <!--                    android:id="@+id/main_check_box_t1"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="T=1"></CheckBox>-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/main_button_set_protocol"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Set Protocol"-->
+            <!--                    android:textSize="10dp"></Button>-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/main_button_get_protocol"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:text="Get Protocol"-->
+            <!--                    android:textSize="10dp"></Button>-->
+            <!--            </LinearLayout>-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Transmit / Control:"-->
+            <!--                android:textSize="10dp"-->
+            <!--                ></TextView>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/main_button_transmit"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Transmit"></Button>-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/main_button_control2"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Control"></Button>-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/main_edit_text_control"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:inputType="number"></EditText>-->
+            <!--            </LinearLayout>-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Secure PIN Entry:"-->
+            <!--                android:textSize="20dp"></TextView>-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/main_button_get_features"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Get Features"></Button>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/main_button_verify_pin"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Verify PIN"></Button>-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/main_button_modify_pin"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Modify PIN"></Button>-->
+            <!--            </LinearLayout>-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="ACR83 / APG8201:"-->
+            <!--                android:textSize="10dp"></TextView>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/main_button_read_key"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Read Key"-->
+            <!--                    android:textSize="5dp"></Button>-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/main_button_display_lcd_message"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Display LCD Message"-->
+            <!--                    android:textSize="5dp"></Button>-->
+
+            <!--            </LinearLayout>-->
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/main_button_open"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:text="Open"></Button>
+
+            <!--Button
+                android:id="@+id/main_button_control3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Control"></Button>
+            <Button
+                android:id="@+id/enroll"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="100dp"
+                android:text="완료"
+                android:visibility="invisible"
+
+                ></Button-->
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom">
+
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/gif_image"-->
+            <!--                android:layout_width="350dp"-->
+            <!--                android:layout_height="350dp"-->
+            <!--                android:layout_marginRight="30dp"-->
+            <!--                android:layout_marginBottom="250dp"-->
+
+
+            <!--                />-->
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

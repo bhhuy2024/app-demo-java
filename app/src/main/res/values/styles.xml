@@ -1,0 +1,21 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorgra</item>
+        <item name="colorPrimaryDark">@color/colorgre</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="Text.btn" parent="android:TextAppearance">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">45dp</item>
+        <item name="android:fontFamily">@font/nanumsquare_acr</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+</resources>

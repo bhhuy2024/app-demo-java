@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:keepScreenOn="true"
+    >
+
+    <!-- 타이틀바 -->
+
+    <!-- //end 타이틀바 -->
+
+    <!-- Notice -->
+    <LinearLayout
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:layout_width="1000dp"
+        android:layout_height="400dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/txtText"
+            android:textSize="40sp"
+            android:textColor="#000"
+            android:alpha="0.87"
+            android:gravity="center"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="시간을 설정해주세요\n"/>
+        <TextView
+            android:id="@+id/txtText2"
+            android:textSize="30sp"
+            android:textColor="#000"
+            android:alpha="0.87"
+            android:gravity="center"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="설정에 들어가서 시간 설정 후 '전송'을 눌러주세요"></TextView>
+
+
+    </LinearLayout>
+    <!-- Notice -->
+
+    <View
+        android:background="#66bdbdbd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <!-- 닫기 버튼 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/close_button"
+            android:text="확인"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"
+            android:gravity="center"
+            android:background="@drawable/blue_bar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            />
+    </LinearLayout>
+    <!--// 닫기 버튼 -->
+</LinearLayout>
+

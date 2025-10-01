@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="1900dp"
+    android:layout_height="1100dp"
+    android:orientation="vertical"
+    android:background="@drawable/h"
+    android:keepScreenOn="true"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="30dp"
+            android:src="@drawable/cancel">
+
+        </ImageView>
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp">
+
+    <TextView
+        android:id="@+id/nameofuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumsquare_acb"
+        android:text=" "
+        android:textSize="75dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        ></TextView>
+
+
+    <TextView
+        android:id="@+id/addressofuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="60dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="@font/nanumsquare_acr"></TextView>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <Button
+            android:id="@+id/dayButton"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:text="일"
+            android:textSize="30dp"
+            android:background="@drawable/blue_bar"
+            android:fontFamily="@font/nanumsquare_acr"
+            android:textColor="#FFFFFF"
+           ></Button>
+        <Button
+            android:id="@+id/weekButton"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:text="주"
+            android:textSize="30dp"
+            android:background="@drawable/grey_bar"
+            android:fontFamily="@font/nanumsquare_acr"
+            android:textColor="#FFFFFF"></Button>
+        <Button
+            android:id="@+id/monthButton"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:text="월"
+            android:textSize="30dp"
+            android:background="@drawable/grey_bar"
+            android:fontFamily="@font/nanumsquare_acr"
+            android:textColor="#FFFFFF"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="40dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/logText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquare_acb"
+                android:text="오늘의 세척 횟수 7회"
+                android:textSize="75dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:visibility="gone"
+                ></TextView>
+            <LinearLayout
+                android:id="@+id/lodaing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ProgressBar
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="잠시만 기다려주세요.."
+                    android:textSize="30dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000">
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gohomeButton"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/button_add3"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="확인 완료"
+                android:textColor="#FFFFFF"
+                android:textSize="50dp"
+
+                ></TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:gravity="center">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/button_add3"-->
+<!--            >-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="확인 완료"></TextView>-->
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reader:"
+            android:textSize="20dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/main_spinner_reader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Spinner>
+
+            <Button
+                android:id="@+id/main_button_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/main_button_open2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open"></Button>
+
+            <Button
+                android:id="@+id/main_button_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close"></Button>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slot:"
+            android:textSize="20dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/main_spinner_slot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Spinner>
+
+            <Button
+                android:id="@+id/main_button_get_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get State"></Button>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Power Action:"
+            android:textSize="20dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/main_spinner_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Spinner>
+
+            <Button
+                android:id="@+id/main_button_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Power"></Button>
+
+            <Button
+                android:id="@+id/main_button_get_atr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get ATR"></Button>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Protocol:"
+            android:textSize="20dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/main_check_box_t0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="T=0"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/main_check_box_t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="T=1"></CheckBox>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/main_button_set_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Protocol"></Button>
+
+            <Button
+                android:id="@+id/main_button_get_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Protocol"></Button>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transmit / Control:"
+            android:textSize="20dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/main_button_transmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transmit"></Button>
+
+            <Button
+                android:id="@+id/main_button_control2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Control"></Button>
+
+            <EditText
+                android:id="@+id/main_edit_text_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"></EditText>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Secure PIN Entry:"
+            android:textSize="20dp"></TextView>
+
+        <Button
+            android:id="@+id/main_button_get_features"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Features"></Button>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/main_button_verify_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verify PIN"></Button>
+
+            <Button
+                android:id="@+id/main_button_modify_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modify PIN"></Button>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACR83 / APG8201:"
+            android:textSize="20dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/main_button_read_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Read Key"></Button>
+
+            <Button
+                android:id="@+id/main_button_display_lcd_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Display LCD Message"></Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </LinearLayout>

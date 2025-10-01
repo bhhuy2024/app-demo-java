@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/color_background"
+    android:gravity="center"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/power_string"
+            android:textColor="@color/colorBlackText"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="right"
+            android:text="SET-UP"
+            android:textSize="30sp"
+            android:enabled="false"
+            android:visibility="visible" >
+        </Button>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="right"
+            android:text="치아교육"
+            android:textSize="30sp"
+            android:enabled="false"
+            android:visibility="visible" >
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:layout_margin="10dp"
+            android:gravity="left"
+            android:text="@string/go_string"
+            android:textColor="#2196F3"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/goremove"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="left"
+            android:text = "Y E S !"
+            android:textSize="70sp" >
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

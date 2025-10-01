@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5.9">
+            <!--TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DentiRoad"
+                android:textSize="30dp"
+                android:layout_marginTop="15dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                > </TextView-->
+            <!--            <ImageView-->
+            <!--                android:layout_width="100dp"-->
+            <!--                android:layout_height="100dp"-->
+            <!--                android:src="@drawable/dentiroad2"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:layout_marginLeft="60dp"-->
+            <!--                android:layout_marginBottom="10dp"-->
+            <!--                ></ImageView>-->
+
+
+            <LinearLayout
+                android:id="@+id/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/leftarrow">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="이전"
+                    android:textColor="#000000"
+                    android:textSize="50dp">
+
+                </TextView>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/touch_button"
+                android:layout_width="1dp"
+                android:layout_height="1dp">
+
+            </Button>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/setting_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="0.1">
+
+            <ImageView
+                android:id="@+id/setting"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/gear">
+
+            </ImageView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right">
+
+        <TextView
+            android:id="@+id/notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/nanumsquare_acr"
+            android:text="세척할 위치를 선택하세요"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="170sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/triangle"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/upparrow"
+            android:visibility="visible" >
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:keepScreenOn="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="200dp"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorPrimary" />
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <RelativeLayout
+                    android:id="@+id/fragment"
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:visibility="visible"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+
+                        <LinearLayout
+                            android:id="@+id/no1"
+                            android:layout_width="650dp"
+                            android:layout_height="650dp"
+                            android:layout_marginRight="40dp"
+
+                            android:background="@drawable/button_add"
+                            android:orientation="vertical">
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1">
+
+
+                                <!--                                <Button-->
+                                <!--                                    android:id="@+id/cancel_button1"-->
+                                <!--                                    android:layout_width="wrap_content"-->
+                                <!--                                    android:layout_height="wrap_content"-->
+                                <!--                                    android:backgroundTint="#FF0000"-->
+                                <!--                                    android:text="삭제"-->
+                                <!--                                    android:textColor="#FFFFFF"-->
+                                <!--                                    android:visibility="invisible"-->
+                                <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                                <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                                <!--                                    app:layout_constraintHorizontal_bias="0.849"-->
+                                <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                                <!--                                    app:layout_constraintTop_toTopOf="parent"-->
+                                <!--                                    app:layout_constraintVertical_bias="0.892" />-->
+
+                                <TextView
+                                    android:id="@+id/textView_name1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nanumsquare_acr"
+                                    android:text="TextView"
+                                    android:textSize="170sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.501"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.499" />
+
+                                <Button
+
+                                    android:id="@+id/button1"
+                                    android:layout_width="650dp"
+                                    android:layout_height="650dp"
+                                    android:background="@drawable/purplebutton"
+
+                                    android:fontFamily="@font/nanumsquare_acb"
+                                    android:shadowRadius="3"
+                                    android:text="1번"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="200sp"
+                                    android:textStyle="bold"
+
+                                    android:visibility="visible"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+
+
+                                    app:layout_constraintVertical_bias="0.0">
+
+
+                                </Button>
+
+                                <ImageView
+                                    android:id="@+id/gif_image"
+                                    android:layout_width="239dp"
+                                    android:layout_height="129dp"
+                                    android:visibility="invisible"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.831"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.561"
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/sterilizing1"
+                                    android:layout_width="85dp"
+                                    android:layout_height="28dp"
+                                    android:layout_marginEnd="56dp"
+                                    android:text="틀니 살균 중"
+                                    android:textSize="18dp"
+                                    android:visibility="invisible"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.871"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.25" />
+
+                                <TextView
+                                    android:id="@+id/num1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nanumsquare_acr"
+                                    android:text="1번 세척기"
+                                    android:textSize="65sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.53"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.104" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/no2"
+                            android:layout_width="650dp"
+                            android:layout_height="650dp"
+                            android:layout_marginLeft="40dp"
+
+                            android:background="@drawable/button_add"
+
+                            android:orientation="vertical">
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1">
+
+
+                                <!--                                <Button-->
+                                <!--                                    android:id="@+id/cancel_button2"-->
+                                <!--                                    android:layout_width="wrap_content"-->
+                                <!--                                    android:layout_height="wrap_content"-->
+                                <!--                                    android:backgroundTint="#FF0000"-->
+                                <!--                                    android:text="삭제"-->
+                                <!--                                    android:textColor="#FFFFFF"-->
+                                <!--                                    android:visibility="invisible"-->
+                                <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                                <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                                <!--                                    app:layout_constraintHorizontal_bias="0.827"-->
+                                <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                                <!--                                    app:layout_constraintTop_toTopOf="parent"-->
+                                <!--                                    app:layout_constraintVertical_bias="0.738" />-->
+
+
+                                <TextView
+                                    android:id="@+id/textView_name2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nanumsquare_acr"
+                                    android:text="TextView"
+                                    android:textSize="170sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.538"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.499" />
+
+                                <Button
+
+                                    android:id="@+id/button2"
+                                    android:layout_width="650dp"
+                                    android:layout_height="650dp"
+                                    android:background="@drawable/purplebutton"
+
+                                    android:fontFamily="@font/nanumsquare_acb"
+                                    android:shadowRadius="3"
+                                    android:text="2번"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="200sp"
+                                    android:textStyle="bold"
+
+                                    android:visibility="visible"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.0" />
+
+                                <ImageView
+                                    android:id="@+id/gif_image2"
+                                    android:layout_width="239dp"
+                                    android:layout_height="129dp"
+                                    android:visibility="invisible"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.831"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.561"
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/sterilizing2"
+                                    android:layout_width="85dp"
+                                    android:layout_height="28dp"
+                                    android:layout_marginEnd="56dp"
+                                    android:layout_marginRight="56dp"
+                                    android:text="틀니 살균 중"
+                                    android:textSize="18dp"
+                                    android:visibility="invisible"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.871"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.25" />
+
+                                <TextView
+                                    android:id="@+id/num2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nanumsquare_acr"
+                                    android:text="2번 세척기"
+                                    android:textSize="65sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.53"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.104" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        </LinearLayout>
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+            <!--            수정수정-->
+            <LinearLayout
+                android:id="@+id/popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EAEAEA"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/btnBluetoothOn"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:text="블루투스 ON"
+                        android:textSize="9dp"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/btnBluetoothOff"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:text="블루투스 OFF"
+                        android:textSize="9dp"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/btnConnect"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:text="연결하기"
+                        android:textSize="9dp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="93sp"
+                            android:layout_height="wrap_content"
+                            android:text="소독"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/in_data1"
+                            android:layout_width="40sp"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:text="70"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="30sp"
+                            android:layout_height="35dp"
+                            android:text="cc"
+                            android:textSize="12sp" />
+
+                        <Spinner
+                            android:id="@+id/in_data2"
+                            android:layout_width="85sp"
+                            android:layout_height="35dp"
+                            android:spinnerMode="dropdown" />
+
+                        <TextView
+                            android:layout_width="30sp"
+                            android:layout_height="35dp"
+                            android:text="(초)"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/in_data3"
+                            android:layout_width="40sp"
+                            android:layout_height="35dp"
+                            android:inputType="number"
+                            android:text="00"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="30sp"
+                            android:layout_height="35dp"
+                            android:text="초"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnSendSetup1"
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:text="전송"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:layout_width="93sp"
+                        android:layout_height="50dp"
+                        android:text=" 세척"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/in_data4"
+                        android:layout_width="38dp"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:text="000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="30sp"
+                        android:layout_height="35dp"
+                        android:text="cc"
+                        android:textSize="12sp" />
+
+
+                    <EditText
+                        android:id="@+id/in_data5"
+                        android:layout_width="50sp"
+                        android:layout_height="50dp"
+                        android:spinnerMode="dropdown"
+                        android:text="00"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:layout_width="30sp"
+                        android:layout_height="50dp"
+                        android:text="(분)"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/in_data6"
+                        android:layout_width="50sp"
+                        android:layout_height="50dp"
+                        android:inputType="number"
+                        android:text="00"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="30sp"
+                        android:layout_height="50dp"
+                        android:text="초"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btnSendSetup2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="전송"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvBluetoothStatus"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:text="status"
+                        android:textSize="15sp"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="visible"></LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/btnSendData"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:text="1번 동작"
+                        android:textSize="9sp" />
+
+                    <Button
+                        android:id="@+id/btnSendData1"
+                        android:layout_width="75dp"
+                        android:layout_height="35dp"
+                        android:text="2번 동작"
+                        android:textSize="9sp" />
+
+                    <Button
+                        android:id="@+id/btnSendData2"
+                        android:layout_width="75dp"
+                        android:layout_height="35dp"
+                        android:text="3번 동작"
+                        android:textSize="9sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btnSendData3"
+                        android:layout_width="75dp"
+                        android:layout_height="35dp"
+                        android:text="4번 동작"
+                        android:textSize="9sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btnSendData4"
+                        android:layout_width="75dp"
+                        android:layout_height="35dp"
+                        android:text="전체 동작"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/btnStop"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:text="1번 정지"
+                        android:textSize="9sp" />
+
+                    <Button
+                        android:id="@+id/btnStop1"
+                        android:layout_width="75dp"
+                        android:layout_height="35dp"
+                        android:text="2번 정지"
+                        android:textSize="9sp" />
+
+                    <Button
+                        android:id="@+id/btnStop2"
+                        android:layout_width="75dp"
+                        android:layout_height="35dp"
+                        android:text="3번 정지"
+                        android:textSize="9sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btnStop3"
+                        android:layout_width="75dp"
+                        android:layout_height="35dp"
+                        android:text="4번 정지"
+                        android:textSize="9sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btnStop4"
+                        android:layout_width="75dp"
+                        android:layout_height="35dp"
+                        android:text="전체 정지"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/btnManual11"
+                        android:layout_width="75sp"
+                        android:layout_height="50dp"
+                        android:text="소독용 입수 밸브"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btnManual21"
+                        android:layout_width="75sp"
+                        android:layout_height="50dp"
+                        android:text="소독용 입수 밸브"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btnManual31"
+                        android:layout_width="75sp"
+                        android:layout_height="50dp"
+                        android:text="소독용 입수 밸브"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btnManual41"
+                        android:layout_width="75sp"
+                        android:layout_height="50dp"
+                        android:text="소독용 입수 밸브"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:layout_width="75sp"
+                        android:layout_height="50dp"
+                        android:textSize="12sp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/btnManual12"
+                        android:layout_width="75sp"
+                        android:layout_height="50dp"
+                        android:text="세척용 입수 밸브"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btnManual22"
+                        android:layout_width="75sp"
+                        android:layout_height="50dp"
+                        android:text="세척용 입수 밸브"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btnManual32"
+                        android:layout_width="75sp"
+                        android:layout_height="50dp"
+                        android:text="세척용 입수 밸브"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btnManual42"
+                        android:layout_width="75sp"
+                        android:layout_height="50dp"
+                        android:text="세척용 입수 밸브"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:layout_width="75sp"
+                        android:layout_height="35dp"
+                        android:textSize="12sp"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/btnManual14"
+                        android:layout_width="75sp"
+                        android:layout_height="50dp"
+                        android:text="초음파 진동기"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btnManual24"
+                        android:layout_width="75sp"
+                        android:layout_height="50dp"
+                        android:text="초음파 진동기"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btnManual34"
+                        android:layout_width="75sp"
+                        android:layout_height="50dp"
+                        android:text="초음파 진동기"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btnManual44"
+                        android:layout_width="75sp"
+                        android:layout_height="50dp"
+                        android:text="초음파 진동기"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:layout_width="75sp"
+                        android:layout_height="35dp"
+                        android:textSize="12sp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/btnManual13"
+                        android:layout_width="75sp"
+                        android:layout_height="50dp"
+                        android:text="출수 밸브"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btnManual23"
+                        android:layout_width="75sp"
+                        android:layout_height="50dp"
+                        android:text="출수 밸브"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btnManual33"
+                        android:layout_width="75sp"
+                        android:layout_height="50dp"
+                        android:text="출수 밸브"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btnManual43"
+                        android:layout_width="75sp"
+                        android:layout_height="50dp"
+                        android:text="출수 밸브"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:layout_width="75sp"
+                        android:layout_height="35dp"
+                        android:textSize="12sp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/btnManual15"
+                        android:layout_width="75sp"
+                        android:layout_height="match_parent"
+                        android:text="전해조"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btnManual25"
+                        android:layout_width="75sp"
+                        android:layout_height="50sp"
+                        android:text="전해조"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btnManual35"
+                        android:layout_width="75sp"
+                        android:layout_height="50sp"
+                        android:text="전해조"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btnManual45"
+                        android:layout_width="75sp"
+                        android:layout_height="50sp"
+                        android:text="전해조"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:layout_width="75sp"
+                        android:layout_height="35dp"
+                        android:textSize="12sp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="visible"></LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ScrollView
+                        android:id="@+id/mScrollview"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:background="#EAEAEA">
+
+                        <TextView
+                            android:id="@+id/tvReceiveData"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text=""
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp" />
+
+                    </ScrollView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/startwashing"
+            android:layout_width="300dp"
+            android:layout_height="10dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="#BABABA"
+            android:text="세척 시작하기"
+            android:textSize="25dp"
+            android:visibility="invisible"
+
+            />
+
+        <Button
+            android:id="@+id/putOutDentures"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="#BABABA"
+            android:text="완료"
+            android:visibility="gone"
+
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

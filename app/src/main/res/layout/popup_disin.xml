@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:keepScreenOn="true"
+    tools:context=".PopupDisinActivity">
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="1300dp"
+        android:layout_height="350dp"
+        android:gravity="center">
+        <TextView
+            android:textSize="80dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="소독액이 없습니다\n"/>
+        <TextView
+            android:textSize="80dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="어떻게 하시겠습니까?\n"/>
+    </LinearLayout>
+
+    <View
+        android:background="#66bdbdbd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/close3_button"
+            android:text="소독액 없이 계속진행"
+            android:textSize="90dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="@drawable/navy_button"
+            android:layout_width="1100dp"
+            android:layout_weight="1"
+            android:layout_height="150dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/close4_button"
+            android:text="소독액 보충후 재진행"
+            android:textSize="90dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="@drawable/navy_button"
+            android:layout_width="1100dp"
+            android:layout_margin="50dp"
+            android:layout_weight="1"
+            android:layout_height="150dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
+

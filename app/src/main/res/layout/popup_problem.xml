@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:keepScreenOn="true"
+    tools:context=".PopupProblemActivity">
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="1300dp"
+        android:layout_height="550dp"
+        android:gravity="center">
+        <TextView
+            android:textSize="80sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:text="작동 오류\n"/>
+        <TextView
+            android:textSize="80sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:text="입수 오류\n"/>
+        <TextView
+            android:textSize="80sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:text="관리자에게 문의하십시오."
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:background="#66bdbdbd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/close7_button"
+            android:text="확인"
+            android:textSize="90sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="@drawable/navy_button"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="200dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
+

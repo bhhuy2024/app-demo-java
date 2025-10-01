@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:keepScreenOn="true"
+    >
+
+    <!-- 타이틀바 -->
+
+    <!-- //end 타이틀바 -->
+
+    <!-- Notice -->
+    <LinearLayout
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:layout_width="1800dp"
+        android:layout_height="750dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/txtText"
+            android:textSize="85dp"
+            android:textColor="#000"
+            android:alpha="0.87"
+            android:gravity="center"
+            android:layout_marginBottom="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="컵이 없습니다.\n"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/txtText2"
+            android:textSize="65dp"
+            android:textColor="#000"
+            android:alpha="0.87"
+            android:gravity="center"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="컵을 놓은뒤 다시 시작하세요."
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+    <!-- Notice -->
+
+    <View
+        android:background="#66bdbdbd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <!-- 닫기 버튼 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/again_button"
+            android:text="다시"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"
+            android:gravity="center"
+            android:background="@drawable/navy_button"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/close_button"
+            android:text="확인"
+            android:textSize="90dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="@drawable/navy_button"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="200dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <!--// 닫기 버튼 -->
+</LinearLayout>
+

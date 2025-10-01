@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SubActivity">
+
+    <Button
+        android:id="@+id/btn_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text = "@string/ssjs3_string"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="70dp"
+        android:gravity="center"
+        android:textColor="#2196F3"
+        android:textStyle="bold"
+        android:text="@string/ssjs2_string"
+        android:textSize="100sp" />
+
+    <TextView
+        android:id="@+id/prog1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:textColor="#42041F"
+        android:textStyle="bold"
+        android:text="@string/ssjs2_string"
+        android:textSize="50sp" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:scaleY="10"
+        android:layout_height="80dp"
+        android:max="1000"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/progressText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="70sp"
+        android:text="0%" />
+
+</LinearLayout>
